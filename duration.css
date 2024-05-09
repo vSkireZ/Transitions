@@ -1,0 +1,35 @@
+#td1, #td2, #td3, #td4{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(58, 47, 18, 0.877);
+    border: 2px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+#td1:hover{
+    transform: scale(0.6);
+    transition-timing-function: ease;
+}
+
+#td2:hover{
+    transform: scale(0.6);
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+}
+
+#td3:hover{
+    transform: scale(0.6);
+    transition-timing-function: ease;
+    transition-duration: 1000ms;
+}
+#td4:hover{
+    transform: scale(0.6);
+    transition-timing-function: ease;
+    transition-duration: 5000ms;
+}

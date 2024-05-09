@@ -1,0 +1,101 @@
+.container4{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 800px;
+    height: 100px;
+    margin:10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#delay1, #delay2, #delay3, #delay4, #delay5{
+    background: rgb(65, 21, 34);
+    color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform-origin: 0 0;
+    transform: translateX(-800px);
+    opacity: 0;
+    transition-duration: 1.2s;
+    transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    
+}
+
+.container4 img{
+    height: 100px;
+}
+
+.container4 img:hover{
+    background-color: rgb(88, 88, 88);
+    transform:scale(0.8);
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+
+}
+
+.container4:is(:hover, :focus) #delay1 {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+
+  .container4:is(:hover, :focus) #delay2 {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+  .container4:is(:hover, :focus) #delay3 {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+  .container4:is(:hover, :focus) #delay4 {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+  .container4:is(:hover, :focus) #delay5 {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+
+#delay1{
+    transition-delay: 0ms;
+}
+#delay2{
+    transition-delay: 100ms;
+}
+#delay3{
+    transition-delay: 200ms;
+}
+#delay4{
+    transition-delay: 300ms;
+}
+#delay5{
+    transition-delay: 400ms;
+}
+
+@media (max-width:650px){
+  .container4{
+      width: 400px;
+      height: 450px;
+  }
+}
+@media (max-width:400px){
+  .container4{
+      width: 165px;
+      height: 750px;
+      display: flex;
+      flex-wrap: wrap-reverse;
+  }
+
+}
